@@ -1,0 +1,100 @@
+/* fading Animation in css */
+
+/* .fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} */
+
+/* @-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1}
+} */
+
+/* @keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+} */
+
+/* This will be used as if some one has a smaller screen */
+
+@media only screen and (max-width: 300px) {
+    .text{
+        font-size: 11px;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Vendana, sans-serif;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+}
+
+.myslides{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/* The slideshow container */
+
+.slideshow-container{
+    width: 750px;
+    height: 400px;
+    position: relative;
+    margin: 0;
+    
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* caption text */
+
+.text{
+    font-size: 14px;
+    padding: 8px 12px;
+    color: black;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dots{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin: 0 2px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+    transition: background-color 0.6 ease;
+}
+
+span.dots{
+    height: 15px;
+    background: white;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}

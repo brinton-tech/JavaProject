@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        header{
+            background-color: grey;
+            width: 100%;
+            margin-bottom: 0%;
+            margin-top: 0%;
+        }
+
+        .menu{
+            margin-top: 10px;
+            
+            
+        }
+
+        .menu ul{
+            display: flex;
+            text-align: right;
+            justify-content: right;
+            margin-top: 5px;
+            margin-bottom: 8px;
+
+        }
+
+        .menu ul li{
+            list-style-type: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: 1px solid black;
+        }
+
+        .menu ul li a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            
+        }
+
+        .menu ul li a:hover{
+            border: 2px solid cyan;
+            padding: 5px;
+        }
+
+        hr{
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+        .submenu{
+            display: flex;
+            margin-top: 0;
+            padding: 0%;
+            
+        }
+
+        .below ul{
+            display: flex;
+            
+            
+            
+        }
+        .below ul li{
+            list-style-type: none;
+            padding: 10px;
+            background: yellow;
+            
+            
+        }
+
+        .below ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: nova font;
+            
+            
+        }
+
+        .logo{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0%;
+        }
+
+        .logo h1{
+            background: yellow;
+        }
+       
+        section{
+            height: 60vh;
+            width: 100%;
+            
+        }
+        .swipper{
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swipper-slide{
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#">locations</a></li>
+                <li><a href="#">contact TBS</a></li>
+                <li><a href="#">schedule an Appointment</a></li>
+                
+            </ul>
+        </div>
+        <hr>
+        <div class="submenu">
+            <div class="logo">
+                <h1>TBS</h1>
+            </div>
+            <div class="below">
+                <ul>
+                    
+                    <li><a href="#">PERSONAL</a></li>
+                    <li><a href="#">BUSINESS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="sliders">
+        <div class="swipper">
+            <div class="swiper-slide" style="background-image: url('https://mygsb.bank/wp-content/uploads/2023/03/lending-sold-hero2.jpg');">
+             
+   
+                <h1>GSB: Better Lending Solutions from a CT community bank.</h1>
+                                    
+                <p>Experience the confidence of having a truly local lending partner. The GSB Lending Center is here for you - whether you're a First Time Homebuyer or looking a for a lender with a full portfolio of financial and banking options.</p>
+                    
+                <a target="_self" href="https://mygsb.bank/lending-center/">START TODAY</a>
+        </div>
+
+        <div class="swiper-slide blue_gradient" style="background-image: url('https://mygsb.bank/wp-content/uploads/2023/03/cd-offer-hero.jpg');">
+            
+
+            <h2>9-Month Smart CD: 4.00% APY*</h2>
+                                
+            <p>Enjoy a high Annual Percentage Yield coupled with the added benefit of a superior GSB checking account!</p>
+            
+            <a target="_self" href="https://mygsb.bank/special-offers/">See Our Latest Offers</a>
+                                                                
+</div>
+
+<div class="swiper-slide" style="background-image: url('https://mygsb.bank/wp-content/uploads/2022/12/business-construction-hero.jpg');">
+    
+
+   <h2>6-Month Business CD: 4.00% APY*</h2>
+   <p>Jump on this short-term CD and get a great Annual Percentage Yield along with the great rate for your Business Checking account!</p>
+    
+   <a target="_self" href="https://mygsb.bank/business-cd-special/">Learn More</a>
+                                                        
+</div>
+    </section>
+   
+
+
+    <div class="slider">
+        <div class="slides">
+            <!-- radio button start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+
+        <!-- slide image start -->
+        <div class="slide first">
+            <img src="./image/1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./image/2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./image/3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./image/4.jpg" alt="">
+        </div>
+
+        <!-- automatic navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            
+        </div>
+
+        
+        
+        </div>
+
+        <!-- manual navigation start -->
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter = 1;
+            }
+        }, 5000) 
+    </script>
+
+</body>
+</html>

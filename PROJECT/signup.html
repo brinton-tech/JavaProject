@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(2, 71, 2);
+        }
+        header{
+            background-color: rgb(10, 10, 49);
+            text-align: center;
+            border-bottom: 3px solid white;
+        }
+
+        header h1{
+            color: white;
+            font-size: 60px;
+        }
+
+        .menu{
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form{
+            background: rgb(10, 10, 49);
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            height: 80vh;
+            margin-top: 2%;
+            border: 2px solid white;
+            border-radius: 30px;
+        }
+ 
+        .form{
+            display: flex;
+            justify-content: baseline;
+        } 
+
+        .divide{
+            width: 50%;
+        }
+        .head{
+            background: white;
+            padding: 0;
+            margin: 0;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+        .head h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(10, 10, 49);
+            padding: 10px;
+            letter-spacing: 4px;
+        }
+
+        .low{
+            margin-top: 20px;
+            margin: 10px;
+            display: flex;
+            
+        }
+
+        .low label{
+            color: white;
+            font-size: 25px;
+        }
+
+        .low input{
+            width: 70%;
+            font-size: 25px;
+            margin-left: 10px;
+            outline: none;
+            color: rgb(2, 71, 2);
+            font-weight: bold;
+        }
+
+        .low select{
+            width: 70%;
+            font-size: 25px;
+            margin-left: 10px;
+            outline: none; 
+        }
+
+        .submit{
+           margin-top: 35px;
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .submit input{
+            width: 100%;
+            font-size: 30px;
+            color: rgb(10, 10, 49);
+            border-radius: 20px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .submit input:hover{
+            background: rgb(10, 10, 49);
+            color: white;
+            border: 2px solid white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TABLE BANKING SYSTEM</h1>
+    </header>
+    <div class="menu">
+        <form action="signup.php" method="POST">
+         <div class="head">
+             <h1>SIGN UP</h1>
+         </div>
+
+         <div class="form">
+            <div class="divide">
+                <div class="low" style="margin-top: 35px;">
+                    <label for="">ID No.</label>
+                    <input type="number" name="id" required style="margin-left: 45px;">
+                </div>
+                <div class="low">
+                    <label for="">First Name</label>
+                    <input type="text" name="first"  required>
+                </div>
+                <div class="low" style="margin-top: 35px;">
+                    <label for="">Last Name</label>
+                    <input type="text" name="last" required>
+                </div>
+               
+               <div class="low" style="margin-top: 35px;">
+                   <label for="">Phone No.</label>
+                   <input type="number" name="phone" required>
+               </div>
+               <div class="low" style="margin-top: 35px;">
+                <label for="">Account</label>
+                <select name="account" id="" style="margin-left: 28px;">
+                    <option value="0">choose Account</option>
+                    <option value="1">MEMBER</option>
+                    <option value="2">ADMIN</option>
+                </select>
+            </div>
+            </div>
+            <div class="divide">
+                <div class="low" style="margin-top: 10px;">
+                    <label for="">County</label>
+                    <input type="text" name="county" required style="margin-left: 53px;">
+                </div>
+                <div class="low" style="margin-top: 35px;">
+                    <label for="">Sub-County</label>
+                    <input type="text" name="subcounty" required>
+                </div>
+                 <div class="low" style="margin-top: 35px; " >
+                     <label for="">Password</label>
+                     <input type="password" style="margin-left: 38px;" name="password" required>
+                 </div>
+                 <div class="low" style="margin-top: 35px;">
+                    <label for="">Confirm P</label><br>
+                    <input type="password" name="cpassword" required style="margin-left: 25px;">
+                </div>
+            </div>
+         </div>
+ 
+         
+        
+         <div class="submit">
+             <input type="submit">
+         </div>
+        </form>
+     </div>
+</body>
+</html>

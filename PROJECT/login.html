@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(2, 71, 2);
+        }
+        header{
+            background-color: rgb(10, 10, 49);
+            text-align: center;
+            border-bottom: 3px solid white;
+        }
+
+        header h1{
+            color: white;
+            font-size: 60px;
+        }
+
+        .menu{
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form{
+            background: rgb(10, 10, 49);
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            height: 60vh;
+            margin-top: 5%;
+            border: 2px solid white;
+            border-radius: 30px;
+        }
+        .head{
+            background: white;
+            padding: 0;
+            margin: 0;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+        .head h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(10, 10, 49);
+            padding: 10px;
+            letter-spacing: 4px;
+        }
+
+        .low{
+            margin-top: 20px;
+            margin: 10px;
+            
+        }
+
+        .low label{
+            color: white;
+            font-size: 25px;
+        }
+
+        .low input{
+            width: 70%;
+            font-size: 25px;
+            margin-left: 10px;
+            outline: none;
+        }
+
+        .submit{
+           margin-top: 35px;
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .submit input{
+            width: 100%;
+            font-size: 30px;
+            color: rgb(10, 10, 49);
+            border-radius: 20px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            
+        }
+
+        .submit input:hover{
+            background: rgb(10, 10, 49);
+            color: white;
+            border: 2px solid white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TABLE BANKING SYSTEM</h1>
+    </header>
+
+    <div class="menu">
+       <form action="">
+        <div class="head">
+            <h1>LOGIN</h1>
+        </div>
+
+        <div class="low">
+            <label for="">First Name</label>
+            <input type="text" required>
+        </div>
+        <div class="low" style="margin-top: 35px;">
+            <label for="">Last Name</label>
+            <input type="text" required>
+        </div>
+        <div class="low" style="margin-top: 35px; " >
+            <label for="">Password</label>
+            <input type="password" style="margin-left: 22px;" required>
+        </div>
+        <div class="submit">
+            <input type="submit">
+        </div>
+        <a href="./home.html">home</a>
+       </form>
+    </div>
+</body>
+</html>
